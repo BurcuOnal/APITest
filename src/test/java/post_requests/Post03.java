@@ -51,8 +51,8 @@ And response body should be like {
 
         //2- Beklenen data kuruldu:
         /*
-    "John","Doe", 11111, true,
-    "bookingdates": { bookingMap - burası artık bu oldu
+        "John","Doe", 11111, true,
+        "bookingdates": {     --> bookingMap--> burası artık bu oldu
         "checkin": "2021-09-09",
         "checkout": "2021-09-21"
          */
@@ -60,8 +60,7 @@ And response body should be like {
         Map<String, String> bookingMap = HerOkuAppTestData.bookingMapper("2021-09-09",
                 "2021-09-21");
         Map<String, Object> payLoad = HerOkuAppTestData.herOkuAppMapper("John", "Doe",
-                11111, true,
-                bookingMap
+                11111, true, bookingMap
                 , null);
 
 
