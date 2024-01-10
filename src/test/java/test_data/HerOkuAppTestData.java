@@ -32,11 +32,21 @@ public class HerOkuAppTestData {
                                                       String additionalneeds ){
 
         Map<String, Object> map = new HashMap<>();
-        map.put("firstname", firstname);
-        map.put("lastname", lastname);
-        map.put("totalprice", totalprice);
-        map.put("depositpaid", depositpaid);
-        map.put("bookingdates", bookingDates);
+       if (firstname !=null){
+           map.put("firstname", firstname);
+       }
+       if(lastname !=null) {
+           map.put("lastname", lastname);
+       }
+        if (totalprice !=null){
+            map.put("totalprice", totalprice);
+        }
+        if(depositpaid !=null) {
+            map.put("depositpaid", depositpaid);
+        }
+        if(bookingDates !=null) {
+            map.put("bookingdates", bookingDates);
+        }
 
          if (additionalneeds !=null ) {
 
